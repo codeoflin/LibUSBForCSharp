@@ -1,0 +1,2 @@
+# LibUSBForCSharp
+由于网上的那个libusbsharp封装太大,而我的项目只用到其中一部分功能,于是自己封装了个简易版
