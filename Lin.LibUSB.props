@@ -1,0 +1,15 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<LibUSBNativeDlls>$(MSBuildThisFileDirectory)..\runtimes\</LibUSBNativeDlls>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include="$(LibUSBNativeDlls)win-x64\native\libusb-1.0.dll">
+			<Link>runtimes\win-x64\native\libusb-1.0.dll</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<Content Include="$(LibUSBNativeDlls)win-x86\native\libusb-1.0.dll">
+			<Link>runtimes\win-x86\native\libusb-1.0.dll</Link>
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+</Project>
